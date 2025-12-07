@@ -1,0 +1,309 @@
+# Forensix Sentinel - Complete Requirements
+# Python 3.10+ Required
+
+# ═══════════════════════════════════════════════════════════════
+# CORE DEPENDENCIES
+# ═══════════════════════════════════════════════════════════════
+
+# CLI & UI
+click>=8.1.0
+rich>=13.7.0
+colorama>=0.4.6
+tqdm>=4.66.0
+
+# Configuration
+pydantic>=2.5.0
+python-dotenv>=1.0.0
+PyYAML>=6.0.1
+
+# ═══════════════════════════════════════════════════════════════
+# FILE ANALYSIS
+# ═══════════════════════════════════════════════════════════════
+
+# File Type Detection
+python-magic>=0.4.27
+
+# Image Analysis
+Pillow>=10.1.0
+ExifRead>=3.0.0
+piexif>=1.1.3
+
+# Document Parsing
+PyPDF2>=3.0.1
+pdfminer.six>=20221105
+python-docx>=1.1.0
+openpyxl>=3.1.2
+python-pptx>=0.6.23
+
+# Archive Handling
+rarfile>=4.1
+py7zr>=0.20.8
+zipfile36>=0.1.3
+
+# Executable Analysis
+pefile>=2023.2.7
+pyelftools>=0.30
+
+# Hashing
+ssdeep>=3.4
+pyblake2>=1.1.2
+
+# ═══════════════════════════════════════════════════════════════
+# FORENSICS TOOLS
+# ═══════════════════════════════════════════════════════════════
+
+# Disk Forensics
+pytsk3>=20231007
+libewf-python>=20201230
+python-registry>=1.3.1
+hivex>=1.3.23
+
+# Memory Forensics
+volatility3>=2.5.0
+
+# Timeline
+plaso>=20231124
+
+# ═══════════════════════════════════════════════════════════════
+# NETWORK FORENSICS
+# ═══════════════════════════════════════════════════════════════
+
+# Packet Analysis
+scapy>=2.5.0
+dpkt>=1.9.8
+pyshark>=0.6
+
+# Protocol Decoding
+impacket>=0.11.0
+
+# GeoIP
+geoip2>=4.7.0
+maxminddb>=2.5.0
+
+# ═══════════════════════════════════════════════════════════════
+# LOG ANALYSIS
+# ═══════════════════════════════════════════════════════════════
+
+# Windows Events
+python-evtx>=0.7.4
+xmltodict>=0.13.0
+
+# Log Parsing
+python-dateutil>=2.8.2
+regex>=2023.10.3
+
+# ═══════════════════════════════════════════════════════════════
+# AI/ML STACK
+# ═══════════════════════════════════════════════════════════════
+
+# Deep Learning
+torch>=2.1.0
+torchvision>=0.16.0
+tensorflow>=2.15.0  # Optional alternative
+
+# NLP
+transformers>=4.35.0
+spacy>=3.7.2
+# Download models: python -m spacy download en_core_web_sm
+
+# Computer Vision
+opencv-python>=4.8.0
+scikit-image>=0.22.0
+
+# ML Utilities
+scikit-learn>=1.3.0
+numpy>=1.24.0
+pandas>=2.1.0
+
+# Model Serving
+onnx>=1.15.0
+onnxruntime>=1.16.0
+
+# ═══════════════════════════════════════════════════════════════
+# DATA PROCESSING
+# ═══════════════════════════════════════════════════════════════
+
+# Data Structures
+networkx>=3.2
+neo4j>=5.14.0  # Optional graph database
+
+# Serialization
+msgpack>=1.0.7
+protobuf>=4.25.0
+
+# Database
+sqlite3  # Built-in
+sqlalchemy>=2.0.23
+
+# ═══════════════════════════════════════════════════════════════
+# VISUALIZATION & REPORTING
+# ═══════════════════════════════════════════════════════════════
+
+# Plotting
+plotly>=5.18.0
+matplotlib>=3.8.0
+seaborn>=0.13.0
+
+# HTML Reports
+jinja2>=3.1.2
+beautifulsoup4>=4.12.2
+
+# PDF Generation
+reportlab>=4.0.7
+weasyprint>=60.1
+
+# Timeline
+timevis>=0.1.6
+
+# ═══════════════════════════════════════════════════════════════
+# UTILITIES
+# ═══════════════════════════════════════════════════════════════
+
+# HTTP Requests
+requests>=2.31.0
+urllib3>=2.1.0
+
+# Async
+aiofiles>=23.2.1
+asyncio  # Built-in
+
+# Multiprocessing
+multiprocess>=0.70.15
+
+# Progress
+alive-progress>=3.1.5
+
+# String Utilities
+fuzzywuzzy>=0.18.0
+python-Levenshtein>=0.23.0
+
+# Encoding
+python-magic>=0.4.27
+chardet>=5.2.0
+
+# Compression
+zstandard>=0.22.0
+lz4>=4.3.2
+
+# Cryptography
+cryptography>=41.0.7
+pycryptodome>=3.19.0
+
+# ═══════════════════════════════════════════════════════════════
+# TESTING
+# ═══════════════════════════════════════════════════════════════
+
+# Test Framework
+pytest>=7.4.0
+pytest-cov>=4.1.0
+pytest-mock>=3.12.0
+pytest-asyncio>=0.21.0
+pytest-benchmark>=4.0.0
+
+# Code Quality
+black>=23.11.0
+isort>=5.12.0
+flake8>=6.1.0
+pylint>=3.0.0
+mypy>=1.7.0
+
+# Documentation
+sphinx>=7.2.0
+sphinx-rtd-theme>=1.3.0
+
+# ═══════════════════════════════════════════════════════════════
+# DEVELOPMENT
+# ═══════════════════════════════════════════════════════════════
+
+# Debugging
+ipdb>=0.13.13
+pdbpp>=0.10.3
+
+# Profiling
+memory-profiler>=0.61.0
+line-profiler>=4.1.1
+
+# Build
+setuptools>=69.0.0
+wheel>=0.42.0
+build>=1.0.3
+
+# Version Control
+GitPython>=3.1.40
+
+# ═══════════════════════════════════════════════════════════════
+# OPTIONAL ENHANCEMENTS
+# ═══════════════════════════════════════════════════════════════
+
+# GPU Acceleration (CUDA required)
+# cupy>=12.3.0
+# torch-cuda>=2.1.0
+
+# Advanced Forensics Tools
+# yara-python>=4.3.1
+# pyclamd>=0.4.0
+
+# Web Interface (Future)
+# fastapi>=0.104.0
+# uvicorn>=0.24.0
+# websockets>=12.0
+
+#  Cloud Storage
+# boto3>=1.29.0  # AWS
+# google-cloud-storage>=2.10.0  # GCP
+# azure-storage-blob>=12.19.0  # Azure
+
+# ═══════════════════════════════════════════════════════════════
+# INSTALLATION NOTES
+# ═══════════════════════════════════════════════════════════════
+
+# System Dependencies (Kali Linux):
+# sudo apt install -y \
+#     python3.10 \
+#     python3-pip \
+#     libmagic1 \
+#     libewf-dev \
+#     libtsk-dev \
+#     exiftool \
+#     volatility3 \
+#     wireshark-common \
+#     tcpdump
+
+# Install Python packages:
+# pip install -r requirements.txt
+
+# Download spaCy models:
+# python -m spacy download en_core_web_sm
+# python -m spacy download en_core_web_md  # Optional, better accuracy
+
+# Download GeoIP databases:
+# # Get free GeoLite2 databases from MaxMind
+
+# Install external tools:
+# sudo apt install -y \
+#     binwalk \
+#     foremost \
+#     autopsy \
+#     sleuthkit \
+#     bulk-extractor
+
+# GPU Support (Optional):
+# # Install NVIDIA CUDA toolkit first
+# pip install torch torchvision --index-url https://download.pytorch.org/whl/cu118
+
+# ═══════════════════════════════════════════════════════════════
+# ESTIMATED SIZES
+# ═══════════════════════════════════════════════════════════════
+
+# Total pip install size: ~2-3 GB
+# With AI models: ~5-6 GB
+# With external tools: ~8-10 GB
+#storage Disk space needed: 15-20 GB recommended
+
+# ═══════════════════════════════════════════════════════════════
+# COMPATIBILITY
+# ═══════════════════════════════════════════════════════════════
+
+# Python: 3.10, 3.11, 3.12
+# OS: Linux (Kali preferred), macOS, Windows (limited)
+# Architecture: x86_64, ARM64 (some tools may not support ARM)
