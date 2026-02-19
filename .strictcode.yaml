@@ -1,0 +1,5 @@
+version: 1
+ignore:
+  - rule: AST00wa4  # Empty except blocks 
+    files: ["tests/demo.py"]
+    reason: "Testing suppression logic on the website!"
